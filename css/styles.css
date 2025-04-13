@@ -527,12 +527,23 @@ video {
     }
 
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-direction: column;
     }
 
     .text-item {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .margin-bottom {
+        margin-bottom: none;
+    }
+
+    .margin-top {
+        margin-top: none;
+    }
+
 
     h1.super-header {
         font-size: 4rem;
