@@ -21,7 +21,7 @@ menuIconDiv.addEventListener('click', () => {
 });
 
 // Search bar functionality
-const searchIcon = document.getElementById("search-icon");
+const searchIconDiv = document.getElementById("search-icon-div");
 const searchBar = document.getElementById("search-bar");
 const searchResults = document.getElementById("search-results");
 const searchBackground = document.getElementById("search-background");
@@ -33,7 +33,7 @@ const keywords = [
     "video", "poster", "chladni", "resonance", "motion", "about", "xander munc"
 ];
 
-searchIcon.addEventListener("click", () => {
+searchIconDiv.addEventListener("click", () => {
     fullscreen = !fullscreen;
     const isVisible = searchBar.classList.contains("visible");
 
@@ -99,7 +99,7 @@ searchBar.addEventListener("input", () => {
                 } else if (word === "installation") {
                     li.classList.add("installation-bg");
                     li.addEventListener("click", () => {
-                        window.location.href = "../hes.html";
+                        window.location.href = "hes.html";
                     });
                 }
 
