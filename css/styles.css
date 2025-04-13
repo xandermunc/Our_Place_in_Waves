@@ -272,6 +272,10 @@ a:hover::after {
     gap: var(--grid-gap);
 }
 
+.span-2 {
+    grid-column: span 2;
+}
+
 .span-3 {
     grid-column: span 3;
 }
@@ -285,7 +289,8 @@ a:hover::after {
 }
 
 img {
-    width: 100%;
+    width: 100% !important;
+    height: auto;
     object-fit: cover;
     background-color: grey;
     margin-bottom: var(--paragraph-text-size);
@@ -554,6 +559,7 @@ video {
     }
 
     .text-item {
+        width: 100% !important;
         grid-template-columns: repeat(1, 1fr);
     }
 
