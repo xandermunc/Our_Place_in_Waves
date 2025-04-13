@@ -530,6 +530,23 @@ video {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .text-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1.super-header {
+        font-size: 4rem;
+        letter-spacing: -0.1rem;
+    }
+
+    .large-video {
+        height: auto !important;
+    }
+
+    .non-mobile {
+        display: none;
+    }
+
     #logo {
         display: none;
     }
