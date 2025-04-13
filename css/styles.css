@@ -520,6 +520,7 @@ video {
     }
 } */
 
+
 @media screen and (max-width: 980px) {
 
     .header-grid {
@@ -558,7 +559,7 @@ video {
         display: none;
     }
 
-    #logo {
-        display: none;
+    .span-4 {
+        grid-column: span 3;
     }
 }
