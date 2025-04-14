@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const clickSound = new Audio("audio/click.wav");
+    const clickSound = new Audio("audio/Click.wav");
 
     searchBar.addEventListener("input", () => {
         clickSound.currentTime = 0;
