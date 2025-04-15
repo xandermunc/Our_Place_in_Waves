@@ -496,22 +496,21 @@ video {
 }
 
 /* MENU */
-
 #menu-container {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    transition: all 0.4s ease;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease; 
 }
 
 #menu-container.visible {
     opacity: 1;
     pointer-events: auto;
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease; 
 }
 
 .menu-grid {
@@ -520,18 +519,58 @@ video {
     gap: var(--grid-gap);
 }
 
-.menu-text-parent:hover .menu-text {
-    color: #09f;
-    transform: translateX(20px) !important;
-}
-
 .menu-text {
     font-family: Neulis !important;
     font-weight: 300 !important;
     font-size: 3rem !important;
-    transition: 0.2s all ease;
     display: inline-block;
+    transform: translateX(-120px);
+    opacity: 0; 
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
+
+#menu-container.visible .menu-text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#menu-container.visible .menu-text-parent:nth-child(1) .menu-text {
+    transition-delay: 0.05s;
+}
+#menu-container.visible .menu-text-parent:nth-child(2) .menu-text {
+    transition-delay: 0.1s;
+}
+#menu-container.visible .menu-text-parent:nth-child(3) .menu-text {
+    transition-delay: 0.15s;
+}
+#menu-container.visible .menu-text-parent:nth-child(4) .menu-text {
+    transition-delay: 0.2s;
+}
+#menu-container.visible .menu-text-parent:nth-child(5) .menu-text {
+    transition-delay: 0.25s;
+}
+#menu-container.visible .menu-text-parent:nth-child(6) .menu-text {
+    transition-delay: 0.3s;
+}
+#menu-container.visible .menu-text-parent:nth-child(7) .menu-text {
+    transition-delay: 0.35s;
+}
+
+#menu-container:not(.visible) .menu-text {
+    transform: translateX(-120px); 
+    opacity: 0; 
+    transition-delay: 0s;
+}
+
+.menu-text-parent:hover .hover-parent {
+    color: #09f;
+    transform: translateX(20px) !important;
+    transition: transform 0.3s ease, color 0.3s ease !important;
+    transition-delay: 0s !important; 
+}
+
+
+
 
 /* SEARCH BACKGROUNDS */
 
@@ -671,6 +710,9 @@ video {
     .menu-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* gap: var(--grid-gap); */
+    }
+
+    .menu-text {
+        font-size: 3rem !important;
     }
 }

@@ -57,6 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isVisible) {
             searchBar.classList.remove("visible");
             document.getElementById('chladni').classList.remove("visible");
+            const searchContainer = document.getElementById("search-container");
+            const searchResultsDiv = document.getElementById("search-results");
+            searchContainer.classList.remove("active");
+            searchResultsDiv.classList.remove("active");
+            searchResults.style.display = "none";
+            searchBar.value = "";
         } else {
             searchBar.classList.add("visible");
             document.getElementById('chladni').classList.add("visible");
@@ -65,33 +71,51 @@ document.addEventListener('DOMContentLoaded', function () {
         searchResults.style.display = "none";
         searchBar.value = "";
 
-        // const nonMenuDivs = document.querySelectorAll('.non-menu');
-        // nonMenuDivs.forEach(div => {
-        //     div.style.opacity = fullscreen ? '0' : '1';
-        // });
-
         document.body.style.overflow = fullscreen ? 'hidden' : '';
     });
 
     searchBar.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
+            const query = searchBar.value.trim();
+            if (query.length === 0) return;
+
             if (!noResultsFound) {
                 document.getElementById("search-container").classList.add("active");
                 document.getElementById("search-results").classList.add("active");
-                const audio = new Audio("audio/F2.wav");
-                audio.play();
+                if (!isMobileDevice()) {
+                    const audio = new Audio("audio/F2.wav");
+                    audio.play();
+                }
             }
         }
     });
 
+    function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
     const clickSound = new Audio("audio/Click.wav");
 
     searchBar.addEventListener("input", () => {
-        clickSound.currentTime = 0;
-        clickSound.play();
+        if (!isMobileDevice()) {
+            clickSound.currentTime = 0;
+            clickSound.play();
+        }
 
-        document.getElementById("search-container").classList.remove("active");
-        document.getElementById("search-results").classList.remove("active");
+        const searchContainer = document.getElementById("search-container");
+        const searchResultsDiv = document.getElementById("search-results");
+
+        const wasActive = searchContainer.classList.contains("active") || searchResultsDiv.classList.contains("active");
+
+        searchContainer.classList.remove("active");
+        searchResultsDiv.classList.remove("active");
+
+        if (wasActive) {
+            if (!isMobileDevice()) {
+                const audio = new Audio("audio/Eb2.wav");
+                audio.play();
+            }
+        }
 
         const query = searchBar.value.toLowerCase();
         searchResults.innerHTML = "";
@@ -127,8 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } else {
             searchResults.style.display = "none";
-            const audio = new Audio("audio/Eb2.wav");
-            audio.play();
         }
     });
 
@@ -136,22 +158,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("search-icon").addEventListener("click", () => {
         if (soundOne) {
-            const audio = new Audio("audio/F2.wav");
-            audio.play();
+            if (!isMobileDevice()) {
+                const audio = new Audio("audio/F2.wav");
+                audio.play();
+            }
         } else {
-            const audio = new Audio("audio/C2.wav");
-            audio.play();
+            if (!isMobileDevice()) {
+                const audio = new Audio("audio/C2.wav");
+                audio.play();
+            }
         }
         soundOne = !soundOne;
     });
 
     document.getElementById("menu-icon").addEventListener("click", () => {
         if (soundOne) {
-            const audio = new Audio("audio/F2.wav");
-            audio.play();
+            if (!isMobileDevice()) {
+                const audio = new Audio("audio/F2.wav");
+                audio.play();
+            }
         } else {
-            const audio = new Audio("audio/C2.wav");
-            audio.play();
+            if (!isMobileDevice()) {
+                const audio = new Audio("audio/C2.wav");
+                audio.play();
+            }
         }
         soundOne = !soundOne;
     });
