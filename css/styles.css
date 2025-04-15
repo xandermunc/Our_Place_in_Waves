@@ -3,6 +3,7 @@
     --padding: calc(var(--header-height) / 3 * 2);
     --header-height: 90px;
     --paragraph-text-size: 1.2rem;
+    --caption-text-size: 1rem;
     --grey: #808080;
     --black: #000;
     --white: #fff;
@@ -152,6 +153,12 @@ a {
     font-weight: 300;
     letter-spacing: 0.05rem;
     line-height: 1.8rem;
+}
+
+p.caption {
+    font-size: var(--caption-text-size);
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
 }
 
 a {
