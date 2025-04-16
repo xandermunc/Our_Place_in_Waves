@@ -52,14 +52,14 @@
 <body>
     <header id="header" class="header-grid padding">
         <div id="logo" class="grid-item header-item span-4 text-underline-parent">
-            <p class="header-icon"><a class="no-style" href="http://xandermunc.art/Our_Place_in_Waves">SPECTRA</a></p>
+            <p class="header-icon"><a class="no-style" href="index.html">SPECTRA</a></p>
         </div>
         <div class="grid-item header-item non-menu-item non-mobile text-underline-parent">
-            <p class="text-underline">Index</p>
+            <p class="text-underline"><a class="no-style" href="index.html">Index</a></p>
         </div>
-        <div class="grid-item header-item non-menu-item non-mobile text-underline-parent">
+        <a href="lessons.html" class="grid-item header-item non-menu-item non-mobile text-underline-parent no-style">
             <p class="text-underline">Lessons</p>
-        </div>
+        </a>
         <div class="grid-item header-item non-menu-item non-mobile text-underline-parent">
             <p class="text-underline">About</p>
         </div>
@@ -122,11 +122,6 @@
                 </div>
                 <div class="menu-text-parent large-text-margin-bottom">
                     <div class="hover-parent">
-                        <a href="hes.html" class="no-style menu-text">Book Covers</a>
-                    </div>
-                </div>
-                <div class="menu-text-parent large-text-margin-bottom">
-                    <div class="hover-parent">
                         <a href="hes.html" class="no-style menu-text">Music</a>
                     </div>
                 </div>
@@ -158,7 +153,7 @@
         </div>
     </section>
 
-    <div class="gradient-five centered top-border" style="width: 100vw; height: 200px;">
+    <div class="gradient-five centered top-border" style="width: 100vw; height: calc(var(--header-height) * 2);">
         <h2 class="neulis-medium white">What are Waves?</h2>
     </div>
 
@@ -191,7 +186,7 @@
         <div class="grid-item span-1"></div>
     </div>
 
-    <div class="gradient-five centered" style="width: 100vw; height: 200px;">
+    <div class="gradient-five centered" style="width: 100vw; height: calc(var(--header-height) * 2);">
         <h2 class="neulis-medium white">Waves are patterns of moving energy.</h2>
     </div>
 
@@ -206,7 +201,7 @@
         <div class="span-1"></div>
     </div>
 
-    <section class="bottom-border centered blue">
+    <div class="bottom-border centered blue">
         <div class="four-column margin-bottom">
             <div id="amplitude-selection" class="AFVW-grid-item hoverable-item active">
                 <p class="hoverable-text-white active">Amplitude</p>
@@ -221,12 +216,12 @@
                 <p class="hoverable-text-white">Wavelength</p>
             </div>
         </div>
-        <div class="two-thirds row gap">
-            <div class="one-third">
-                <div class="space-between">
-                    <h1 id="anatomy-title" class="big-header no-padding-top white">Amplitude</h1>
-                </div><br>
-                <p id="anatomy-paragraph" class="paragraph white margin-bottom">Amplitude is the wave's maximum
+        <div class="grid padding">
+            <div class="span-1"></div>
+            <div class="grid-item span-3">
+                <h1 id="anatomy-title" class="white">Amplitude</h1>
+                <br>
+                <p id="anatomy-paragraph" class="white margin-bottom">Amplitude is the wave's maximum
                     displacement, the higher the amplitude, the more energy the wave carries. The energy of the wave is
                     proportional to the square of the amplitude. It is measured in various units depending on the type
                     of wave. <br><br> In light, amplitude affects intensity or brightness. It is commonly measured in
@@ -234,7 +229,7 @@
                     and is expressed as pressure. It is measured in decibels (dB), which represents perceived loudness
                     on a logarithmic scale. </p>
             </div>
-            <div class="one-third centered">
+            <div class="grid-item span-3 centered">
                 <canvas id="amplitude-wave" class="absolute margin-bottom inactive" width="800" height="300"></canvas>
                 <canvas id="solo-wave" class="absolute margin-bottom" width="800" height="300"></canvas>
                 <h1 id="anatomy-title-symbol" class="double-title-text white z-index-1">A</h1>
@@ -245,104 +240,129 @@
                     value="1.6" step="0.001"> <input type="range" id="solo-wavelength" class="margin-bottom inactive"
                     min="1" max="5" value="1.6" step="0.001">
             </div>
+            <div class="span-1"></div>
         </div>
-    </section>
+    </div>
 
-    <!-- <section class="bottom-border centered">
-        <div class="two-thirds">
-            <h1 class="big-header underline">A Closer Look</h1>
+    <div class="border-padding bottom-border">
+        <div class="grid">
+            <div class="span-1"></div>
+            <h1 class="span-6 large-text-margin-bottom">A Closer Look</h1>
+            <div class="span-1"></div>
         </div>
-        <div class="two-thirds row">
-            <div class="one-third centered">
-                <image class="margin-bottom svg-height" src="../svg/Anatomy.svg"></image>
-            </div>
-            <div class="one-third centered">
-                <p class="large-text-paragraph margin-bottom" style="margin-left: var(--header-height);">Amplitude is the wave's maximum displacement.<br><br>
-                    Frequency is the number of wave cycles that pass a given point in a second.<br><br>
-                    Velocity is the speed of a wave.<br><br>
-                    Wavelength is the distance between two consecutive points on a wave.
-                </p>
-            </div>
+        <div class="grid">
+            <div class="span-1"></div>
+            <image class="span-3" src="images/svg/Anatomy.svg" style="background-color: white;"> </image>
+            <p class="span-3">Amplitude is the wave's maximum displacement.<br><br>
+                Frequency is the number of wave cycles that pass a given point in a second.<br><br> Velocity is the
+                speed of a wave.<br><br> Wavelength is the distance between two consecutive points on a wave.
+            </p>
+            <div class="span-1"></div>
         </div>
-    </section> -->
+    </div>
 
-    <!-- <section class="bottom-border centered">
-        <div class="two-thirds">
-            <h1 class="big-header underline">Wavelength vs Frequency</h1>
-            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta alias tempora tenetur
+    <div class="grid border-padding-no-bottom" style="background-color: white; z-index: 10;">
+        <div class="span-1"></div>
+        <div class="grid-item span-6">
+            <h1 class="large-text-margin-bottom">Wavelength vs Frequency</h1>
+            <p class="large-text-margin-bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta alias
+                tempora tenetur
                 quaerat. Similique ducimus in repellendus neque autem natus obcaecati voluptatibus ullam hic ipsum
                 magni, temporibus iusto quia aut tempora fugiat minima commodi, ab nobis dignissimos ut vero, aliquid
                 ex! Culpa rerum veritatis maiores nobis at facere eveniet, ea quaerat iusto illum accusantium
                 praesentium. Illum magni id explicabo delectus.</p><br>
         </div>
-        <div class="two-thirds row gap">
-            <div class="one-third centered">
-                <image class="margin-bottom double-header-height" src="../svg/LowWHighF.svg"></image>
-            </div>
-            <div class="one-third centered">
-                <image class="margin-bottom double-header-height" src="../svg/HighWLowF.svg"></image>
-            </div>
-        </div>
-    </section> -->
+        <div class="span-1"></div>
+    </div>
 
-    <!-- <div class="centered">
-        <div class="two-thirds">
-            <h1 class="big-header underline">The Equation <span class="inter">v=fλ</span></h1>
+    <div class="grid border-padding-left-right bottom-border" style="background-color: white; z-index: 10;">
+        <div class="span-1"></div>
+        <div class="span-3">
+            <image class="double-header-height" src="images/svg/LowWHighF.svg" style="background-color: white;"></image>
+        </div>
+        <div class="span-3">
+            <image class="margin-bottom double-header-height" src="images/svg/HighWLowF.svg"
+                style="background-color: white;"></image>
+        </div>
+        <div class="span-1"></div>
+    </div>
+
+    <div class="grid border-padding">
+        <div class="span-1"></div>
+        <div class="grid-item span-6">
+            <h1 class="double-text-margin-bottom">The Equation v=fλ</h1>
             <p class="paragraph">The relationship between velocity, frequency, and wavelength is
                 represented by the equation v=fλ. It shows that the speed of a wave is equal to its frequency multiplied
                 by its wavelength. This creates a connection between how fast a wave moves and its shape-related
                 properties. This equation is universal, applying to all types of waves, and illustrates how these
                 properties interact with each other.</p>
         </div>
-    </div> -->
+        <div class="span-1"></div>
+    </div>
 
-    <div class="small-section bottom-border centered">
+    <div class="bottom-border centered">
 
         <canvas id="wave" width="800" height="300"></canvas>
 
         <div class="wave-control-grid">
             <div class="wave-control-grid-item">
                 <label for="amplitude">
-                    <h1>Amplitude</h1>
+                    <h2>Amplitude</h2>
                 </label>
             </div>
-            <input type="range" id="amplitude" min="5" max="100" value="50" step="0.001">
+            <div class="centered">
+                <input type="range" id="amplitude" min="5" max="100" value="50" step="0.001">
+            </div>
             <div class="wave-control-grid-item">
                 <label for="velocity">
-                    <h1>Velocity</h1>
+                    <h2>Velocity</h2>
                 </label>
             </div>
-            <input type="range" id="velocity" min="1" max="5" value="1.6" step="0.001">
+            <div class="centered">
+                <input type="range" id="velocity" min="1" max="5" value="1.6" step="0.001">
+            </div>
             <div class="wave-control-grid-item">
                 <label for="frequency">
-                    <h1>Frequency</h1>
+                    <h2>Frequency</h2>
                 </label>
             </div>
-            <input type="range" id="frequency" min="1" max="5" value="1" step="0.001">
+            <div class="centered">
+                <input type="range" id="frequency" min="1" max="5" value="1" step="0.001">
+            </div>
             <div class="wave-control-grid-item">
                 <label for="wavelength">
-                    <h1>Wavelength</h1>
+                    <h2>Wavelength</h2>
                 </label>
             </div>
-            <input type="range" id="wavelength" min="1" max="5" value="1.6" step="0.001">
+            <div class="centered">
+                <input type="range" id="wavelength" min="1" max="5" value="1.6" step="0.001">
+            </div>
         </div>
 
         <div id="color-rect"></div>
     </div>
 
-    <!-- <section class="bottom-border centered">
-        <div class="two-thirds">
-            <h1 class="big-header underline">Conclusion</h1>
-            <p class="paragraph">Waves are patterns of moving energy.</p>
-            <p class="paragraph">Waves move energy from one place to another, like ripples running on water or sound
-                traveling through air. </p>
-            <p class="paragraph">Light is a wave, and sound is a wave.</p>
-            <p class="paragraph">Some waves transport energy by moving through matter, traveling through different
-                mediums such as air, water, or solids. But, other waves can even move through empty space.</p>
-            <p class="paragraph margin-bottom">Understanding waves is the key to understanding how we perceive the world
-                around us, from the light we see, to the sounds we hear, to the force that holds us to our planet.</p>
+    <div class="border-padding" style="background-color: white; z-index: 10;">
+        <div class="grid">
+            <div class="span-1"></div>
+            <h1 class="span-6 large-text-margin-bottom">Conclusion</h1>
+            <div class="span-1"></div>
         </div>
-    </section> -->
+        <div class="grid">
+            <div class="span-1"></div>
+            <div class="grid-item span-6">
+                <p>Waves are patterns of moving energy.</p>
+                <p>Waves move energy from one place to another, like ripples running on water or sound traveling through
+                    air. </p>
+                <p>Light is a wave, and sound is a wave.</p>
+                <p>Some waves transport energy by moving through matter, traveling through different mediums such as
+                    air, water, or solids. But, other waves can even move through empty space.</p>
+                <p>Understanding waves is the key to understanding how we perceive the world around us, from the light
+                    we see, to the sounds we hear, to the force that holds us to our planet. </p>
+            </div>
+            <div class="span-1"></div>
+        </div>
+    </div>
 
     <!-- <footer>
         <div class="grid">
