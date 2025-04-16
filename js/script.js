@@ -185,4 +185,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         soundOne = !soundOne;
     });
+
+    searchResults.addEventListener('wheel', function (e) {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            searchResults.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
+
 });

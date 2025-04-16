@@ -158,10 +158,14 @@
         </div>
     </section>
 
-    <div class="grid border-padding top-border bottom-border">
+    <div class="gradient-five centered top-border" style="width: 100vw; height: 200px;">
+        <h2 class="neulis-medium white">What are Waves?</h2>
+    </div>
+
+    <div class="grid border-padding bottom-border">
         <div class="grid-item span-1"></div>
         <div class="grid-item span-4">
-            <h1 class="text-margin-bottom">Overview</h1>
+            <h1 class="double-text-margin-bottom">Overview</h1>
             <p>The Glossary of Light and Sound is an interactive resource for
                 understanding the basics of the wave science of Light and Sound. It is a tool for beginners and curious
                 learners to explore the phenomena of the beautiful world of waves around them. </p>
@@ -172,7 +176,7 @@
     <div class="grid border-padding bottom-border">
         <div class="grid-item span-1"></div>
         <div class="grid-item span-6">
-            <h1 class="text-margin-bottom">What are Waves?</h1>
+            <h1 class="double-text-margin-bottom">What are Waves?</h1>
             <p class="text-margin-bottom">Waves are patterns of moving energy.</p>
             <p class="text-margin-bottom">Waves move energy from one place to another, like ripples running on water or
                 sound
@@ -191,10 +195,10 @@
         <h2 class="neulis-medium white">Waves are patterns of moving energy.</h2>
     </div>
 
-    <div class="grid border-padding bottom-border">
+    <div class="grid border-padding">
         <div class="span-1"></div>
         <div class="grid-item span-6">
-            <h1 class="text-margin-bottom">The Anatomy of a Wave</h1>
+            <h1 class="double-text-margin-bottom">The Anatomy of a Wave</h1>
             <p>Waves are made of their fundamental properties, which define how they
                 function and interact with the world. The four properties of waves we will look at first are amplitude,
                 frequency, velocity, and wavelength.</p>
@@ -203,17 +207,17 @@
     </div>
 
     <section class="bottom-border centered blue">
-        <div class="grid four-column margin-bottom">
-            <div id="amplitude-selection" class="grid-item hoverable-item active">
+        <div class="four-column margin-bottom">
+            <div id="amplitude-selection" class="AFVW-grid-item hoverable-item active">
                 <p class="hoverable-text-white active">Amplitude</p>
             </div>
-            <div id="frequency-selection" class="grid-item hoverable-item-deep-blue">
+            <div id="frequency-selection" class="AFVW-grid-item hoverable-item-deep-blue">
                 <p class="hoverable-text-white">Frequency</p>
             </div>
-            <div id="velocity-selection" class="grid-item hoverable-item-deep-blue">
+            <div id="velocity-selection" class="AFVW-grid-item hoverable-item-deep-blue">
                 <p class="hoverable-text-white">Velocity</p>
             </div>
-            <div id="wavelength-selection" class="grid-item hoverable-item-deep-blue">
+            <div id="wavelength-selection" class="AFVW-grid-item hoverable-item-deep-blue">
                 <p class="hoverable-text-white">Wavelength</p>
             </div>
         </div>
@@ -223,16 +227,12 @@
                     <h1 id="anatomy-title" class="big-header no-padding-top white">Amplitude</h1>
                 </div><br>
                 <p id="anatomy-paragraph" class="paragraph white margin-bottom">Amplitude is the wave's maximum
-                    displacement, the higher the
-                    amplitude, the more energy the wave carries. The energy of the wave is proportional to the square of
-                    the amplitude. It is measured in various units depending on the type of wave.
-                    <br><br>
-                    In light, amplitude affects intensity or brightness. It is commonly measured in
-                    electric field strength (Volts per meter, V/m).
-                    <br><br>
-                    In sound, amplitude corresponds to loudness and is expressed as pressure. It is
-                    measured in decibels (dB), which represents perceived loudness on a logarithmic scale.
-                </p>
+                    displacement, the higher the amplitude, the more energy the wave carries. The energy of the wave is
+                    proportional to the square of the amplitude. It is measured in various units depending on the type
+                    of wave. <br><br> In light, amplitude affects intensity or brightness. It is commonly measured in
+                    electric field strength (Volts per meter, V/m). <br><br> In sound, amplitude corresponds to loudness
+                    and is expressed as pressure. It is measured in decibels (dB), which represents perceived loudness
+                    on a logarithmic scale. </p>
             </div>
             <div class="one-third centered">
                 <canvas id="amplitude-wave" class="absolute margin-bottom inactive" width="800" height="300"></canvas>
@@ -241,62 +241,12 @@
                 <div class="anatomy-symbol-blur-rect margin-bottom"></div>
                 <input type="range" id="solo-amplitude" class="margin-bottom" min="5" max="100" value="50" step="0.001">
                 <input type="range" id="solo-frequency" class="margin-bottom inactive" min="1" max="5" value="1"
-                    step="0.001">
-                <input type="range" id="solo-velocity" class="margin-bottom inactive" min="1" max="5" value="1.6"
-                    step="0.001">
-                <input type="range" id="solo-wavelength" class="margin-bottom inactive" min="1" max="5" value="1.6"
-                    step="0.001">
+                    step="0.001"> <input type="range" id="solo-velocity" class="margin-bottom inactive" min="1" max="5"
+                    value="1.6" step="0.001"> <input type="range" id="solo-wavelength" class="margin-bottom inactive"
+                    min="1" max="5" value="1.6" step="0.001">
             </div>
         </div>
     </section>
-
-    <div class="grid border-padding bottom-border" style="width: 100vw; background-color: red;">
-        <div id="amplitude-selection" class="grid-item hoverable-item active span-2" style="background-color: green;">
-            <p class="hoverable-text-white active">Amplitude</p>
-        </div>
-        <div id="frequency-selection" class="grid-item hoverable-item-deep-blue span-2">
-            <p class="hoverable-text-white">Frequency</p>
-        </div>
-        <div id="velocity-selection" class="grid-item hoverable-item-deep-blue span-2">
-            <p class="hoverable-text-white">Velocity</p>
-        </div>
-        <div id="wavelength-selection" class="grid-item hoverable-item-deep-blue span-2">
-            <p class="hoverable-text-white">Wavelength</p>
-        </div>
-
-        <div class="span-1"></div>
-        <div class="grid-item span-3" style="background-color: blue;">
-            <div class="one-third">
-                <div class="space-between">
-                    <h1 id="anatomy-title" class="text-margin-bottom white">Amplitude</h1>
-                </div><br>
-                <p id="anatomy-paragraph" class="white">Amplitude is the wave's maximum displacement, the higher the
-                    amplitude, the more energy the wave carries. The energy of the wave is proportional to the square of
-                    the amplitude. It is measured in various units depending on the type of wave. <br><br> In light,
-                    amplitude affects intensity or brightness. It is commonly measured in electric field strength (Volts
-                    per meter, V/m). <br><br> In sound, amplitude corresponds to loudness and is expressed as pressure.
-                    It is measured in decibels (dB), which represents perceived loudness on a logarithmic scale.
-                </p>
-            </div>
-        </div>
-        <div class="grid-item span-3" style="background-color: yellow;">
-            <div class="one-third centered">
-                <!-- <canvas id="amplitude-wave" class="absolute margin-bottom inactive" width="800" height="300"></canvas> -->
-                <!-- <canvas id="solo-wave" class="absolute margin-bottom" width="800" height="300"></canvas> -->
-                <h1 id="anatomy-title-symbol" class="double-title-text white z-index-1">A</h1>
-                <div class="anatomy-symbol-blur-rect margin-bottom"></div>
-                <input type="range" id="solo-amplitude" class="margin-bottom" min="5" max="100" value="50" step="0.001">
-                <input type="range" id="solo-frequency" class="margin-bottom inactive" min="1" max="5" value="1"
-                    step="0.001">
-                <input type="range" id="solo-velocity" class="margin-bottom inactive" min="1" max="5" value="1.6"
-                    step="0.001">
-                <input type="range" id="solo-wavelength" class="margin-bottom inactive" min="1" max="5" value="1.6"
-                    step="0.001">
-            </div>
-        </div>
-        <div class="span-1"></div>
-    </div>
-
 
     <!-- <section class="bottom-border centered">
         <div class="two-thirds">
@@ -346,7 +296,7 @@
         </div>
     </div> -->
 
-    <!-- <div class="small-section bottom-border centered">
+    <div class="small-section bottom-border centered">
 
         <canvas id="wave" width="800" height="300"></canvas>
 
@@ -378,7 +328,7 @@
         </div>
 
         <div id="color-rect"></div>
-    </div> -->
+    </div>
 
     <!-- <section class="bottom-border centered">
         <div class="two-thirds">
@@ -404,93 +354,102 @@
             </div>
         </div>
     </footer> -->
-    <script src="../js/AFVW/AFVW.js"></script>
-    <script src="../js/AFVW/AFWVSolo.js"></script>
-    <script src="../js/superposition.js"></script>
+    <script src="js/AFVW/AFVW.js"></script>
+    <script src="js/AFVW/AFWVSolo.js"></script>
     <script src="js/script.js"></script>
     <script src="js/menu-icon.js"></script>
     <script src="js/search-icon.js"></script>
     <script>
-        const titleMap = {
-            "amplitude-selection": "Amplitude",
-            "frequency-selection": "Frequency",
-            "velocity-selection": "Velocity",
-            "wavelength-selection": "Wavelength"
-        }
-
-        const titleSymbolMap = {
-            "amplitude-selection": "A",
-            "frequency-selection": "f",
-            "velocity-selection": "v",
-            "wavelength-selection": "λ"
-        }
-
-        const contentMap = {
-            "amplitude-selection": "Amplitude is the wave's maximum displacement, the higher the amplitude, the more energy the wave carries. The energy of the wave is proportional to the square of the amplitude. It is measured in various units depending on the type of wave.<br><br>In light, amplitude affects intensity or brightness. It is commonly measured in electric field strength (Volts per meter, V/m).<br><br>In sound, amplitude corresponds to loudness and is expressed as pressure. It is measured in decibels (dB), which represents perceived loudness on a logarithmic scale.",
-            "frequency-selection": "Frequency is the number of wave cycles that pass a given point in a second. It is measured in hertz (Hz) where one hertz equals one cycle per second. Higher frequencies correspond to shorter wavelengths as frequency and wavelength are inversely proportional. <br><br> In light, frequency is relative to color. Higher frequencies correspond to shorter wavelengths, resulting in cooler colors like blue and violet, while lower frequencies correspond to longer wavelengths, producing warmer colors like red and orange. <br><br> In sound, frequency determines pitch, measured by the number of vibrations of a sound wave per second in hertz. Higher frequencies produce high-pitched sounds, while lower frequencies produce low-pitched ones.",
-            "velocity-selection": "Velocity is the speed of a wave. The measurement of a wave's velocity varies depending on the type of wave and the medium being propagated. <br><br> The speed of light waves through a medium. In a vacuum, it is about 300,000 kilometers per second, slowing in denser materials like water or glass. <br><br> The speed of sound waves is influenced by the medium's density and elasticity. In air, the speed is about 343 meters per second, and it is generally faster in solids and liquids.",
-            "wavelength-selection": "Wavelength is the distance between two consecutive points on a wave. Waves with shorter wavelengths carry more energy than those with longer ones. Higher wavelengths correspond to shorter frequencies as wavelength and frequency are inversely proportional.<br><br> In light, wavelength determines color. Shorter wavelengths produce cooler colors, while longer wavelengths create warmer ones. Higher-energy lightwaves, those with shorter wavelengths, produce higher temperatures as they are more energetic. For example, blue stars are much hotter than red stars. <br><br>In sound, wavelength is relative to pitch with typical wavelengths in air spanning from a few centimeters for high-pitched sounds, to several meters for lower-pitched ones. In music, a high note has a much shorter wavelength than one a few octaves lower."
-        };
-
-        document.querySelectorAll('.grid-item').forEach(item => {
-            item.addEventListener('click', () => {
-                document.querySelectorAll('.grid-item').forEach(gridItem => {
-                    gridItem.classList.remove('active', 'hoverable-item');
-                    gridItem.classList.add('hoverable-item-deep-blue');
-                    gridItem.querySelector('p').classList.remove('active');
-                });
-
-                item.classList.add('active', 'hoverable-item');
-                item.classList.remove('hoverable-item-deep-blue');
-                item.querySelector('p').classList.add('active');
-
-                document.getElementById('anatomy-title').innerHTML = titleMap[item.id];
-                document.getElementById('anatomy-title-symbol').innerHTML = titleSymbolMap[item.id];
-                document.getElementById('anatomy-paragraph').innerHTML = contentMap[item.id];
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.AFVW-grid-item').forEach(gridItem => {
+                const pTag = gridItem.querySelector('p');
+                if (pTag) {
+                    pTag.classList.remove('active');
+                }
             });
-        });
 
-        function resetDefaults() {
-            amplitudeS = 50;
-            frequencyS = 1;
-            wavelengthS = 160;
-            velocityS = 1.6;
-            document.getElementById('solo-amplitude').value = 50;
-            document.getElementById('solo-wavelength').value = 1.6;
-            document.getElementById('solo-frequency').value = 1;
-            document.getElementById('solo-velocity').value = 1.6;
-        }
 
-        document.getElementById('amplitude-selection').addEventListener('click', () => {
-            document.getElementById('solo-amplitude').classList.remove('inactive');
-            document.getElementById('solo-wavelength').classList.add('inactive');
-            document.getElementById('solo-frequency').classList.add('inactive');
-            document.getElementById('solo-velocity').classList.add('inactive');
-            resetDefaults();
-        });
+            const titleMap = {
+                "amplitude-selection": "Amplitude",
+                "frequency-selection": "Frequency",
+                "velocity-selection": "Velocity",
+                "wavelength-selection": "Wavelength"
+            }
 
-        document.getElementById('wavelength-selection').addEventListener('click', () => {
-            document.getElementById('solo-amplitude').classList.add('inactive');
-            document.getElementById('solo-wavelength').classList.remove('inactive');
-            document.getElementById('solo-frequency').classList.add('inactive');
-            document.getElementById('solo-velocity').classList.add('inactive');
-            resetDefaults();
-        });
+            const titleSymbolMap = {
+                "amplitude-selection": "A",
+                "frequency-selection": "f",
+                "velocity-selection": "v",
+                "wavelength-selection": "λ"
+            }
 
-        document.getElementById('frequency-selection').addEventListener('click', () => {
-            document.getElementById('solo-amplitude').classList.add('inactive');
-            document.getElementById('solo-wavelength').classList.add('inactive');
-            document.getElementById('solo-frequency').classList.remove('inactive');
-            document.getElementById('solo-velocity').classList.add('inactive');
-            resetDefaults();
-        });
+            const contentMap = {
+                "amplitude-selection": "Amplitude is the wave's maximum displacement, the higher the amplitude, the more energy the wave carries. The energy of the wave is proportional to the square of the amplitude. It is measured in various units depending on the type of wave.<br><br>In light, amplitude affects intensity or brightness. It is commonly measured in electric field strength (Volts per meter, V/m).<br><br>In sound, amplitude corresponds to loudness and is expressed as pressure. It is measured in decibels (dB), which represents perceived loudness on a logarithmic scale.",
+                "frequency-selection": "Frequency is the number of wave cycles that pass a given point in a second. It is measured in hertz (Hz) where one hertz equals one cycle per second. Higher frequencies correspond to shorter wavelengths as frequency and wavelength are inversely proportional. <br><br> In light, frequency is relative to color. Higher frequencies correspond to shorter wavelengths, resulting in cooler colors like blue and violet, while lower frequencies correspond to longer wavelengths, producing warmer colors like red and orange. <br><br> In sound, frequency determines pitch, measured by the number of vibrations of a sound wave per second in hertz. Higher frequencies produce high-pitched sounds, while lower frequencies produce low-pitched ones.",
+                "velocity-selection": "Velocity is the speed of a wave. The measurement of a wave's velocity varies depending on the type of wave and the medium being propagated. <br><br> The speed of light waves through a medium. In a vacuum, it is about 300,000 kilometers per second, slowing in denser materials like water or glass. <br><br> The speed of sound waves is influenced by the medium's density and elasticity. In air, the speed is about 343 meters per second, and it is generally faster in solids and liquids.",
+                "wavelength-selection": "Wavelength is the distance between two consecutive points on a wave. Waves with shorter wavelengths carry more energy than those with longer ones. Higher wavelengths correspond to shorter frequencies as wavelength and frequency are inversely proportional.<br><br> In light, wavelength determines color. Shorter wavelengths produce cooler colors, while longer wavelengths create warmer ones. Higher-energy lightwaves, those with shorter wavelengths, produce higher temperatures as they are more energetic. For example, blue stars are much hotter than red stars. <br><br>In sound, wavelength is relative to pitch with typical wavelengths in air spanning from a few centimeters for high-pitched sounds, to several meters for lower-pitched ones. In music, a high note has a much shorter wavelength than one a few octaves lower."
+            };
 
-        document.getElementById('velocity-selection').addEventListener('click', () => {
-            document.getElementById('solo-amplitude').classList.add('inactive');
-            document.getElementById('solo-wavelength').classList.add('inactive');
-            document.getElementById('solo-frequency').classList.add('inactive');
-            document.getElementById('solo-velocity').classList.remove('inactive');
-            resetDefaults();
+            document.querySelectorAll('.AFVW-grid-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelectorAll('.AFVW-grid-item').forEach(gridItem => {
+                        gridItem.classList.remove('active', 'hoverable-item');
+                        gridItem.classList.add('hoverable-item-deep-blue');
+                        gridItem.querySelector('p').classList.remove('active');
+                    });
+
+                    item.classList.add('active', 'hoverable-item');
+                    item.classList.remove('hoverable-item-deep-blue');
+                    item.querySelector('p').classList.add('active');
+
+                    document.getElementById('anatomy-title').innerHTML = titleMap[item.id];
+                    document.getElementById('anatomy-title-symbol').innerHTML = titleSymbolMap[item.id];
+                    document.getElementById('anatomy-paragraph').innerHTML = contentMap[item.id];
+                });
+            });
+
+            function resetDefaults() {
+                amplitudeS = 50;
+                frequencyS = 1;
+                wavelengthS = 160;
+                velocityS = 1.6;
+                document.getElementById('solo-amplitude').value = 50;
+                document.getElementById('solo-wavelength').value = 1.6;
+                document.getElementById('solo-frequency').value = 1;
+                document.getElementById('solo-velocity').value = 1.6;
+            }
+
+            document.getElementById('amplitude-selection').addEventListener('click', () => {
+                document.getElementById('solo-amplitude').classList.remove('inactive');
+                document.getElementById('solo-wavelength').classList.add('inactive');
+                document.getElementById('solo-frequency').classList.add('inactive');
+                document.getElementById('solo-velocity').classList.add('inactive');
+                resetDefaults();
+            });
+
+            document.getElementById('wavelength-selection').addEventListener('click', () => {
+                document.getElementById('solo-amplitude').classList.add('inactive');
+                document.getElementById('solo-wavelength').classList.remove('inactive');
+                document.getElementById('solo-frequency').classList.add('inactive');
+                document.getElementById('solo-velocity').classList.add('inactive');
+                resetDefaults();
+            });
+
+            document.getElementById('frequency-selection').addEventListener('click', () => {
+                document.getElementById('solo-amplitude').classList.add('inactive');
+                document.getElementById('solo-wavelength').classList.add('inactive');
+                document.getElementById('solo-frequency').classList.remove('inactive');
+                document.getElementById('solo-velocity').classList.add('inactive');
+                resetDefaults();
+            });
+
+            document.getElementById('velocity-selection').addEventListener('click', () => {
+                document.getElementById('solo-amplitude').classList.add('inactive');
+                document.getElementById('solo-wavelength').classList.add('inactive');
+                document.getElementById('solo-frequency').classList.add('inactive');
+                document.getElementById('solo-velocity').classList.remove('inactive');
+                resetDefaults();
+            });
         });
     </script>
 </body>
