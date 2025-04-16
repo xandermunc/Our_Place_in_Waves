@@ -168,8 +168,7 @@ i {
     font-weight: 300;
 }
 
-p,
-a {
+p {
     font-size: var(--paragraph-text-size);
     font-family: 'Neulis', sans-serif;
     font-weight: 300;
@@ -184,8 +183,8 @@ p.caption {
 }
 
 a {
-    font-family: 'Neulis', sans-serif;
-    font-weight: 300;
+    /* font-family: 'Neulis', sans-serif; */
+    /* font-weight: 300; */
     cursor: pointer;
 }
 
@@ -239,12 +238,9 @@ p.light {
     height: var(--header-height);
 }
 
-.text-underline-parent p {
-    position: relative;
-    display: inline-block;
-}
-
-.text-underline-parent h1 {
+.text-underline-parent p,
+.text-underline-parent h1,
+.text-underline-parent h2 {
     position: relative;
     display: inline-block;
 }
@@ -290,7 +286,7 @@ a.no-style:hover::after {
     opacity: 0;
 }
 
-a::after {
+a.underline::after {
     content: "";
     position: absolute;
     left: 0;
@@ -303,7 +299,7 @@ a::after {
     transition: var(--ease-time) ease all;
 }
 
-a:hover::after {
+a.underline:hover::after {
     opacity: 1;
     transform: scaleX(1);
 }
@@ -624,6 +620,8 @@ video {
     font-size: 3rem !important;
     display: inline-block;
     transform: translateX(-120px);
+    letter-spacing: 0.05rem;
+    line-height: 1.8rem;
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
