@@ -185,8 +185,12 @@ p.caption {
 
 a {
     font-family: 'Neulis', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
+}
+
+a.bold {
+    font-weight: 400;
 }
 
 p.header-icon {
@@ -271,7 +275,7 @@ a {
 a.no-style {
     text-decoration: none;
     color: inherit;
-    font-family: inherit;
+    font-family: inherit !important;
     font-size: inherit;
     letter-spacing: inherit;
 }
@@ -713,7 +717,7 @@ video {
 }
 
 .mobile-only {
-    display: none; 
+    display: none;
 }
 
 @media screen and (max-width: 980px) {
