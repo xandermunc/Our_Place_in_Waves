@@ -5,6 +5,8 @@
     --paragraph-text-size: 1.2rem;
     --caption-text-size: 1rem;
     --grey: #808080;
+    --dark-grey: #1e1e1e;
+    --dark-grey-blueish: #141420;
     --black: #000;
     --white: #fff;
     --deep-red: #900;
@@ -1103,4 +1105,16 @@ label {
     text-align: left;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+}
+
+/* COLOR BODY */
+
+body.black {
+    background-color: var(--dark-grey-blueish) !important;
+    color: var(--white) !important;
+}
+
+header.black {
+    background-color: var(--dark-grey-blueish) !important;
+    color: var(--white) !important;
 }
